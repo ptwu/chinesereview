@@ -1,0 +1,237 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	  <title>Chinese Review Quiz</title>
+
+	  <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	 
+	  
+	  <style> 
+	  
+	  .crop {
+	    width: 500px;
+	    height: 200px;
+	    overflow: hidden;
+	}
+	</style>
+	</head>
+	<body>
+	  <header>
+	   
+			
+		  
+	     
+	    </header>
+		<main>
+			<div class="container">
+				<div class="section no-pad-bot" id="index-banner">
+				<div class="container">
+				  
+				  <h1 class="header center black-text">Chinese Review Quiz</h1>
+				  <h3 class = "header center grey-text">Weather</h2>
+				 
+
+				</div>
+			</div>
+			</div>
+	  
+
+	<br><br>
+	  <div class="container">
+	    <div class="row">
+
+
+				
+
+				  <!-- Modal Structure -->
+				  <div id="gradeModal" class="modal">
+				    <div class="modal-content">
+				      <h4>Your Grade</h4>
+				      <p id="label_grade" style="font-size:26px">0/15 Correct</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+				    </div>
+				  </div>
+
+
+	        <div class="col s12 m12">
+	               
+			<form id="generalquizform">
+				<p class="light" style="font-size:18px">What is <b>sunny</b> in Chinese?</p>
+				<div class = "crop"><img src = "sunny.jpg" height = "100%" width = "60%"></div>
+			    <p>
+			      <input name="question1" type="radio" id="q11" value="1" />
+			      <label for="q11">云</label>
+			    </p>
+			    <p>
+			      <input name="question1" type="radio" id="q12" value="2" />
+			      <label for="q12">雨</label>
+			    </p>
+			    <p>
+			      <input name="question1" type="radio" id="q13" value="3"  />
+			      <label for="q13">晴</label>
+			    </p>
+			      <p>
+			        <input name="question1" type="radio" id="q14" value="4" />
+			        <label for="q14">雾</label>
+			    </p>
+
+			    <br>
+			    <p class="light" style="font-size:18px">What is <b>rain</b> in Chinese?</p>
+			    <div class = "crop"><img src = "rain.jpg" height = "100%" width = "60%"></div>
+			    <p>
+			      <input name="question2" type="radio" id="q21" value="1" />
+			      <label for="q21">雨</label>
+			    </p>
+			    <p>
+			      <input name="question2" type="radio" id="q22" value="2" />
+			      <label for="q22">晴</label>
+			    </p>
+			    <p>
+			      <input name="question2" type="radio" id="q23" value="3"  />
+			      <label for="q23">云</label>
+			    </p>
+			      <p>
+			        <input name="question2" type="radio" id="q24" value="4" />
+			        <label for="q24">妈</label>
+			    </p>
+			    
+			    <br>
+				 <p class="light" style="font-size:18px">What is <b>cloud</b> in Chinese?</p>
+				 <div class = "crop"><img src = "cloudy.jpg" height = "100%" width = "60%"></div>
+			    <p>
+			      <input name="question3" type="radio" id="q31" value="1" />
+			      <label for="q31">雨</label>
+			    </p>
+			    <p>
+			      <input name="question3" type="radio" id="q32" value="2" />
+			      <label for="q32">云</label>
+			    </p>
+			    <p>
+			      <input name="question3" type="radio" id="q33" value="3"  />
+			      <label for="q33">雾</label>
+			    </p>
+			      <p>
+			        <input name="question3" type="radio" id="q34" value="4" />
+			        <label for="q34">大</label>
+			    </p>
+			    
+			    <br>
+
+			    <p class="light" style="font-size:18px">What is <b>fog</b> (Swahili: <b>ukungu</b>) in Chinese?</p>
+				 <div class = "crop"><img src = "fog.jpg" height = "100%" width = "60%"></div>
+			    <p>
+			      <input name="question4" type="radio" id="q41" value="1" />
+			      <label for="q41">雨</label>
+			    </p>
+			    <p>
+			      <input name="question4" type="radio" id="q42" value="2" />
+			      <label for="q42">云</label>
+			    </p>
+			    <p>
+			      <input name="question4" type="radio" id="q43" value="3"  />
+			      <label for="q43">雾</label>
+			    </p>
+			      <p>
+			        <input name="question4" type="radio" id="q44" value="4" />
+			        <label for="q44">风</label>
+			    </p>
+			    
+			    <br>
+			    
+			    <p class="light" style="font-size:18px">What is <b>wind </b>in Chinese?</p>
+				 <div class = "crop"><img src = "wind.jpg" height = "100%" width = "60%"></div>
+			    <p>
+			      <input name="question5" type="radio" id="q51" value="1" />
+			      <label for="q51">风</label>
+			    </p>
+			    <p>
+			      <input name="question5" type="radio" id="q52" value="2" />
+			      <label for="q52">晴</label>
+			    </p>
+			    <p>
+			      <input name="question5" type="radio" id="q53" value="3"  />
+			      <label for="q53">雨</label>
+			    </p>
+			      <p>
+			        <input name="question5" type="radio" id="q54" value="4" />
+			        <label for="q54">雾</label>
+			    </p>
+			    
+			    <br>
+			   
+			  </form>
+
+			  <button class="btn waves-effect waves-light" onclick="gradeGeneralAnswers()">Grade My Answers
+				    <i class="material-icons right">send</i>
+				  </button>		    
+				  <button class="btn waves-effect waves-light" onclick="document.getElementById('generalquizform').reset()">Clear my answers
+				    <i class="material-icons right">cached</i>
+				  </button>	
+				  <a href = "index.html">
+				    <button class="btn waves-effect waves-light" onclick="document.getElementById('generalquizform').reset()">Go Back 回去
+				  </button>	
+				  </a>
+	      	</div>
+
+	 
+	 	 </div>
+	      
+	  </div>
+	  
+	  </main>
+
+	  <footer class="page-footer grey">
+
+	    <div class="footer-copyright">
+	      <div class="container">
+	      Website made by Peter Wu
+	      </div>
+	    </div> 
+	  </footer>
+
+
+	  <!--  Scripts-->
+	  <script src="jquery-2.1.1.min.js"></script>
+	  <script src="materialize.js"></script>
+	  <script src="init.js"></script>
+	  <script>
+		$(".button-collapse").sideNav();
+		$('#index_getStartedButton').click(function(){ $(".button-collapse").sideNav('show'); return false; });
+
+		$(document).ready(function(){
+		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		    $('.modal').modal();
+		  });
+		var answers	= ["3", "1", "2", "3", "1"];
+
+		function gradeGeneralAnswers()
+		{
+			var correctAnswers = 0;
+			var totalAnswers = answers.length;
+			for (var i = 0; i < totalAnswers; i++) { 
+			    
+			    var correctAnswer = answers[i];
+			    var userAnswer = $('input[name=question' + (i+1) + ']:checked').val();
+				
+				correctAnswers += (correctAnswer === userAnswer) ? 1 : 0;
+
+			}
+
+			 
+			$('#gradeModal').modal('open');
+			console.log(correctAnswers);
+			$("#label_grade").text(correctAnswers + '/' + totalAnswers + ' Correct (' + (correctAnswers/totalAnswers * 100) + '%)');
+
+		}
+	  </script>
+
+	  </body>
+	</html>
