@@ -1,0 +1,256 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	  <title>Chinese Review Quiz</title>
+
+	  <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	 
+	  
+	  <style> 
+	  
+	  .crop {
+	    width: 500px;
+	    height: 200px;
+	    overflow: hidden;
+	}
+	</style>
+	</head>
+	<body>
+	  <header>
+	   
+			
+		  
+	     
+	    </header>
+		<main>
+			<div class="container">
+				<div class="section no-pad-bot" id="index-banner">
+				<div class="container">
+				  
+				  <h1 class="header center black-text">Chinese Review Quiz</h1>
+				  <h3 class = "header center grey-text">Directions 方向</h2>
+				 <center><img src = "DirectionsEnglish.gif"></center><br>
+				 <center>The directions in English</center>
+
+				</div>
+			</div>
+			</div>
+	  
+
+	<br><br>
+	  <div class="container">
+	    <div class="row">
+
+
+				
+
+				  <!-- Modal Structure -->
+				  <div id="gradeModal" class="modal">
+				    <div class="modal-content">
+				      <h4>Your Grade</h4>
+				      <p id="label_grade" style="font-size:26px">0/15 Correct</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+				    </div>
+				  </div>
+
+
+	        <div class="col s12 m12">
+	               
+			<form id="generalquizform">
+				<p class="light" style="font-size:18px">What is <b>East</b> in Chinese?</p>
+				
+			    <p>
+			      <input name="question1" type="radio" id="q11" value="1" />
+			      <label for="q11">东</label>
+			    </p>
+			    <p>
+			      <input name="question1" type="radio" id="q12" value="2" />
+			      <label for="q12">南</label>
+			    </p>
+			    <p>
+			      <input name="question1" type="radio" id="q13" value="3"  />
+			      <label for="q13">西</label>
+			    </p>
+			      <p>
+			        <input name="question1" type="radio" id="q14" value="4" />
+			        <label for="q14">北</label>
+			    </p>
+
+			    <br>
+			    <p class="light" style="font-size:18px">What is <b>South</b> in Chinese?</p>
+			    <p>
+			      <input name="question2" type="radio" id="q21" value="1" />
+			      <label for="q21">东</label>
+			    </p>
+			    <p>
+			      <input name="question2" type="radio" id="q22" value="2" />
+			      <label for="q22">南</label>
+			    </p>
+			    <p>
+			      <input name="question2" type="radio" id="q23" value="3"  />
+			      <label for="q23">西</label>
+			    </p>
+			      <p>
+			        <input name="question2" type="radio" id="q24" value="4" />
+			        <label for="q24">北</label>
+			    </p>
+			    
+			    <br>
+				 <p class="light" style="font-size:18px">What is <b>West</b> in Chinese?</p>
+				
+			    <p>
+			      <input name="question3" type="radio" id="q31" value="1" />
+			      <label for="q31">东</label>
+			    </p>
+			    <p>
+			      <input name="question3" type="radio" id="q32" value="2" />
+			      <label for="q32">南</label>
+			    </p>
+			    <p>
+			      <input name="question3" type="radio" id="q33" value="3"  />
+			      <label for="q33">西</label>
+			    </p>
+			      <p>
+			        <input name="question3" type="radio" id="q34" value="4" />
+			        <label for="q34">北</label>
+			    </p>
+			    
+			    <br>
+
+			    <p class="light" style="font-size:18px">What is <b>North</b> in Chinese?</p>
+				
+			    <p>
+			      <input name="question4" type="radio" id="q41" value="1" />
+			      <label for="q41">东</label>
+			    </p>
+			    <p>
+			      <input name="question4" type="radio" id="q42" value="2" />
+			      <label for="q42">南</label>
+			    </p>
+			    <p>
+			      <input name="question4" type="radio" id="q43" value="3"  />
+			      <label for="q43">西</label>
+			    </p>
+			      <p>
+			        <input name="question4" type="radio" id="q44" value="4" />
+			        <label for="q44">北</label>
+			    </p>
+			    
+			    <br>
+			    
+			    <p class="light" style="font-size:18px">How do you say <b>Northwest</b> in Chinese?</p>
+				
+			    <p>
+			      <input name="question5" type="radio" id="q51" value="1" />
+			      <label for="q51">东南</label>
+			    </p>
+			    <p>
+			      <input name="question5" type="radio" id="q52" value="2" />
+			      <label for="q52">西北</label>
+			    </p>
+			    <p>
+			      <input name="question5" type="radio" id="q53" value="3"  />
+			      <label for="q53">北西</label>
+			    </p>
+			      <p>
+			        <input name="question5" type="radio" id="q54" value="4" />
+			        <label for="q54">北东</label>
+			    </p>
+			    
+			    <br>
+			    <p class="light" style="font-size:18px">How do you say <b>Southeast</b> in Chinese?</p>
+				
+			    <p>
+			      <input name="question6" type="radio" id="q61" value="1" />
+			      <label for="q61">东南</label>
+			    </p>
+			    <p>
+			      <input name="question6" type="radio" id="q62" value="2" />
+			      <label for="q62">西北</label>
+			    </p>
+			    <p>
+			      <input name="question6" type="radio" id="q63" value="3"  />
+			      <label for="q63">北西</label>
+			    </p>
+			      <p>
+			        <input name="question6" type="radio" id="q64" value="4" />
+			        <label for="q64">北东</label>
+			    </p>
+			    
+			    <br>
+			  </form>
+
+			  <button class="btn waves-effect waves-light" onclick="gradeGeneralAnswers()">Grade My Answers
+				    <i class="material-icons right">send</i>
+				  </button>		    
+				  <button class="btn waves-effect waves-light" onclick="document.getElementById('generalquizform').reset()">Clear my answers
+				    <i class="material-icons right">cached</i>
+				  </button>	
+				  <a href = "index.html">
+				    <button class="btn waves-effect waves-light" onclick="document.getElementById('generalquizform').reset()">Go Back 回去
+				  </button>	
+				  </a>
+	      	</div>
+
+	 
+	 	 </div>
+	      
+	  </div>
+	  
+	  </main>
+
+	  <footer class="page-footer grey">
+
+	    <div class="footer-copyright">
+	      <div class="container">
+	      Website made by Peter Wu
+	      </div>
+	    </div> 
+	  </footer>
+
+
+	  <!--  Scripts-->
+	  <script src="jquery-2.1.1.min.js"></script>
+	  <script src="materialize.js"></script>
+	  <script src="init.js"></script>
+	  <script>
+		$(".button-collapse").sideNav();
+		$('#index_getStartedButton').click(function(){ $(".button-collapse").sideNav('show'); return false; });
+
+		$(document).ready(function(){
+		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		    $('.modal').modal();
+		  });
+		var answers	= ["1", "2", "3", "4", "2", "1"];
+
+		function gradeGeneralAnswers()
+		{
+			var correctAnswers = 0;
+			var totalAnswers = answers.length;
+			for (var i = 0; i < totalAnswers; i++) { 
+			    
+			    var correctAnswer = answers[i];
+			    var userAnswer = $('input[name=question' + (i+1) + ']:checked').val();
+				
+				correctAnswers += (correctAnswer === userAnswer) ? 1 : 0;
+
+			}
+
+			 
+			$('#gradeModal').modal('open');
+			console.log(correctAnswers);
+			$("#label_grade").text(correctAnswers + '/' + totalAnswers + ' Correct (' + (correctAnswers/totalAnswers * 100) + '%)');
+
+		}
+	  </script>
+
+	  </body>
+	</html>

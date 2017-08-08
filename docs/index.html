@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Chinese Review Quizzes</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 
+  
+  <style> 
+  .crop {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+  <header>
+   
+		
+	  
+     
+    </header>
+	<main>
+		<div class="container">
+			<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+			  
+			  <h1 class="header center black-text">Chinese Review </h1>
+			<br>
+			 <h2 class = "header center grey-text">Quizzes:</h2>
+
+			</div>
+		</div>
+		</div>
+  
+
+<br><br>
+  <div class="container">
+    <center><div class="row">
+
+
+		  <a href="quiz1.html" id="asdfsadf" class="btn-large waves-effect waves-light blue darken-3">Greetings and Sayings</a>
+		  <a href="quiz2.html" id="asdfsfaw" class="btn-large waves-effect waves-light blue darken-3">Colors</a>
+
+		  <a href="quiz3.html" id="asdfsfas" class="btn-large waves-effect waves-light blue darken-3">Fruits</a>
+
+		   <a href="quiz4.html" id="asdffsfas" class="btn-large waves-effect waves-light blue darken-3">Numbers</a>
+
+		     <a href="quiz5.html" id="adsdffsfas" class="btn-large waves-effect waves-light blue darken-3">Directions</a>
+
+      	</div>
+      	<div class = "row">
+<a href="quiz6.html" id="adsdffweagfas" class="btn-large waves-effect waves-light blue darken-3">Weather</a>
+      	</div>
+ 		</center>
+ 	 </div>
+      
+  </div>
+  
+  </main>
+
+  <footer class="page-footer grey">
+
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Peter Wu
+      </div>
+    </div> 
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="materialize.js"></script>
+  <script src="init.js"></script>
+  <script>
+	$(".button-collapse").sideNav();
+	$('#index_getStartedButton').click(function(){ $(".button-collapse").sideNav('show'); return false; });
+
+	$(document).ready(function(){
+	    $('.modal').modal();
+	  });
+	var answers	= ["2", "1", "4", "2", "3"];
+
+	function gradeGeneralAnswers()
+	{
+		var correctAnswers = 0;
+		var totalAnswers = answers.length;
+		for (var i = 0; i < totalAnswers; i++) { 
+		    
+		    var correctAnswer = answers[i];
+		    var userAnswer = $('input[name=question' + (i+1) + ']:checked').val();
+			
+			correctAnswers += (correctAnswer === userAnswer) ? 1 : 0;
+
+		}
+
+		 
+		$('#gradeModal').modal('open');
+		console.log(correctAnswers);
+		$("#label_grade").text(correctAnswers + '/' + totalAnswers + ' Correct (' + (correctAnswers/totalAnswers * 100) + '%)');
+
+	}
+  </script>
+
+  </body>
+</html>
